@@ -1,6 +1,6 @@
 <template>
   <pokemon-page />
-  <pokemon-picture />
+  <pokemon-picture :pokemonId="140" :showPokemon="true"/>
   <pokemon-options />
 </template>
 
