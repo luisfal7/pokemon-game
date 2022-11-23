@@ -1,5 +1,5 @@
 <template>
-  <pokemon-page />
+  <h1>¿Quién este pokémon?</h1>
   <pokemon-picture :pokemonId="140" :showPokemon="true"/>
   <pokemon-options />
 </template>
@@ -7,12 +7,14 @@
 <script>
 import PokemonOptions from './components/PokemonOptions.vue'
 import PokemonPicture from './components/PokemonPicture.vue'
-import PokemonPage from './pages/PokemonPage.vue'
+
+import getPokemonOptions from '@/helpers/getPokemonOptions'
+
+console.log(getPokemonOptions())
 
 export default {
   name: 'App',
   components: {
-    PokemonPage,
     PokemonOptions,
     PokemonPicture
   }
